@@ -27,14 +27,39 @@ import java.util.*;
 public class AppBasics {
 	static Scanner scanner = new Scanner(System.in);
 
+	/**
+	 * @param userName
+	 * @param appName
+	 */
 	public static void farewellMessage(String userName, String appName) {
-		System.out.println(" Thank you for using " + appName + " Have a great day," + userName);
+		System.out.println(" Thank you for using " + appName + " \n Have a great day, " + userName);
 
 	}
 
-	public static String greetUserAndGetName(String appName) {
-		System.out.println("Hello, Welcome to the " + appName + " App.\n");
+	/**
+	 * @param name
+	 * @return
+	 */
+	public static String greetUserAndGetName(String name) {
+		System.out.println("Hello, Welcome to the " + name + " App.\n");
 		System.out.print(" May I get your name?");
+		return scanner.nextLine();
+	}
+
+	/**
+	 * @param string
+	 * @return
+	 */
+	public static String requestInfoFromUser(String myQuestion) {
+		System.out.print(myQuestion + " ");
+		return scanner.nextLine();
+	}
+
+	/**
+	 * @return
+	 */
+	public static String requestMoodFromUser() {
+		System.out.print("What is your current mood? ");
 		return scanner.nextLine();
 	}
 
