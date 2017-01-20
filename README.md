@@ -1,4 +1,4 @@
-###Basic Project
+###Pet Registration Project
 #Java Application
 
 * JDK 7
